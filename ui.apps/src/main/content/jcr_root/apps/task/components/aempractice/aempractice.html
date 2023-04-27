@@ -1,0 +1,12 @@
+<div class="cmp-helloworld__item" data-sly-use.model="com.task.core.models.impl.AemPracticeImpl">
+    <img src="${model.imagePath}" data-sly-test="${model.backgroundImage && !(!wcmmode.preview || !wcmmode.edit)}"/>
+    <h2>${properties.title}</h2>
+    <ul data-sly-list.navigation="${model.navigationItems}">
+        <li><a href="${navigation.navigationpath}">${navigation.navigationtitle}</a></li>
+    </ul>
+    <p data-sly-test="${wcmmode.preview || wcmmode.edit}">Author mode</p>
+    <p>Current page title: ${currentPage.title}</p>
+    <p>Current page path: ${currentPage.path}</p>
+
+
+</div>
